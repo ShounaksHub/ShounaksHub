@@ -169,9 +169,9 @@
 <div align="center">
   <h3>🐍 Contribution Grid Snake</h3>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ShounaksHub/ShounaksHub/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ShounaksHub/ShounaksHub/output/github-contribution-grid-snake.svg">
-    <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/ShounaksHub/ShounaksHub/output/github-contribution-grid-snake-dark.svg" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/github-contribution-grid-snake.svg">
+    <img alt="GitHub Contribution Snake" src="assets/github-contribution-grid-snake-dark.svg" width="100%">
   </picture>
 </div>
 
