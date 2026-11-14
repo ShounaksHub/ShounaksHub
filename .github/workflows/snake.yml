@@ -1,4 +1,4 @@
-name: Generate Contribution Snake
+name: Generate Contribution Snake & Sync Stats
 
 on:
   schedule:
@@ -29,15 +29,20 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#00F5D4&color_dots=#161b22,#0e4429,#006d32,#26a641,#39d353
 
-      - name: Commit updated snake assets to main
+      - name: Refresh Telemetry Stats SVGs
+        run: |
+          curl -s "https://github-readme-stats-tau-six.vercel.app/api?username=ShounaksHub&show_icons=true&theme=tokyonight&border_radius=10&title_color=00F5D4&icon_color=8B5CF6&text_color=94A3B8&bg_color=0B0F19" -o assets/stats.svg || true
+          curl -s "https://github-readme-stats-tau-six.vercel.app/api/top-langs/?username=ShounaksHub&layout=compact&theme=tokyonight&border_radius=10&title_color=00F5D4&text_color=94A3B8&bg_color=0B0F19" -o assets/top-langs.svg || true
+
+      - name: Commit updated telemetry assets to main
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/github-contribution-grid-snake*.svg
+          git add assets/github-contribution-grid-snake*.svg assets/stats.svg assets/top-langs.svg
           if git diff --staged --quiet; then
-            echo "No changes in snake grid."
+            echo "No changes in telemetry assets."
           else
-            git commit -m "chore(telemetry): update automated contribution snake grid"
+            git commit -m "chore(telemetry): auto-update stats & snake grid [skip ci]"
             git push origin main
           fi
 

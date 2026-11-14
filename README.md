@@ -145,7 +145,7 @@
     <tr>
       <td align="center" valign="middle">
         <a href="https://github.com/ShounaksHub">
-          <img src="https://github-readme-stats-anuraghazra.vercel.app/api?username=ShounaksHub&show_icons=true&theme=tokyonight&hide_border=false&border_radius=10&title_color=00F5D4&icon_color=8B5CF6&text_color=94A3B8&bg_color=0B0F19" alt="Shounak's GitHub Stats" />
+          <img src="assets/stats.svg" alt="Shounak's GitHub Stats" />
         </a>
       </td>
       <td align="center" valign="middle">
@@ -159,7 +159,7 @@
   <br />
 
   <a href="https://github.com/ShounaksHub">
-    <img src="https://github-readme-stats-anuraghazra.vercel.app/api/top-langs/?username=ShounaksHub&layout=compact&theme=tokyonight&hide_border=false&border_radius=10&title_color=00F5D4&text_color=94A3B8&bg_color=0B0F19" alt="Top Languages" />
+    <img src="assets/top-langs.svg" alt="Top Languages" />
   </a>
 </div>
 
