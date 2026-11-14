@@ -42,9 +42,9 @@
       </ul>
     </td>
     <td width="38%" align="center" valign="middle">
-      <img src="assets/cyber-dev.gif" width="100%" style="border-radius: 12px; border: 1px solid #1E293B;" alt="Developer Workspace" />
+      <img src="assets/tech-meme.gif" width="100%" style="border-radius: 12px; border: 1px solid #1E293B;" alt="Deploying to Production" />
       <br />
-      <sub><b><code>root@shounak:~$ status --active</code></b></sub>
+      <sub><b><code>root@shounak:~$ deploy --target=production 🔥 "Everything is fine."</code></b></sub>
     </td>
   </tr>
 </table>
